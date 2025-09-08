@@ -2800,10 +2800,10 @@ else if(data.equals("car")){
         InlineKeyboardButton button1 = new InlineKeyboardButton();
         if (user.getLanguage().equals("uz")) {
             button1.setText("🚖 Haydovchi");
-            button1.setUrl(" http:///register?chatId=" + chatId + "&language=uz");
+            button1.setUrl("https://prolific-hope-production.up.railway.app/register?chatId=" + chatId + "&language=uz");
         } else {
             button1.setText("🚖 Драйверы");
-            button1.setUrl(" http:///register?chatId=" + chatId + "&language=ru");
+            button1.setUrl("https://prolific-hope-production.up.railway.app/register?chatId=" + chatId + "&language=ru");
         }
         button1.setCallbackData("Drivers");
         row1.add(button1);

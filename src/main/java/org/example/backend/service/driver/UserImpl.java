@@ -91,20 +91,20 @@ public class UserImpl implements UserService{
 
             userRepo.save(user);
 
-            String apiToken ="7516605771:AAFXsTzRzd2aqoUNFX2TdnSlsGQ3yOAAyjk";
+            String apiToken ="8041999022:AAHr7q8ZLVsklNkL6iKJwfO8uDMl7vxQ8N8";
             String chatId = String.valueOf(user.getChatId());
             String text = "";
 
             // Uz tilidagi xabar
             if (user.getLanguage().equals("uz")) {
                 text = "🎉 Tabriklaymiz! Siz muvaffaqiyatli tasdiqlandingiz. Telegram botdan davom etish uchun /start buyrug'ini bering.\n" +
-                        "🌐 Veb saytdan davom etish uchun: https://kenjacar.uz/login\n" +
+                        "🌐 Veb saytdan davom etish uchun: https://prolific-hope-production.up.railway.app/login\n" +
                         "🔑 Login: " + user.getPhoneNumber() + " | Parol: " + plainPassword;
             }
             // Rus tilidagi xabar
             else {
                 text = "🎉 Поздравляем! Вы успешно подтверждены. Для начала введите команду /start.\n" +
-                        "🌐 Продолжить на сайте: https://kenjacar.uz/login\n" +
+                        "🌐 Продолжить на сайте: https://prolific-hope-production.up.railway.app/login\n" +
                         "🔑 Логин: " + user.getPhoneNumber() + " | Пароль: " + plainPassword;
             }
 
